@@ -9,7 +9,7 @@
 ## Install via Composer
 
 ```
-"require": {
+    "require": {
         "ganjaaa/TinyCounter": "dev-master"
     },
     "repositories": [
