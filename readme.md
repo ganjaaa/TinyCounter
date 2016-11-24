@@ -1,8 +1,7 @@
 # TinyCounter
 
 ## ToDo
--> writing Tests
--> Documentation
+-> Edit this File
 -> wrinting autoinstall via composer
 
 
