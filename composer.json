@@ -1,12 +1,12 @@
 {
     "name": "ganjaaa/TinyCounter",
-    "description": "Just my little Helper Script",
+    "description": "Just a little CounterScript",
     "license": "MIT",
     "keywords": ["ganjaaa", "counter"],
     "authors": [
         {
             "name": "Felix Kurth",
-            "email": "meine@agonie.info"
+            "email": "fku@inmedias.it"
         }
     ],
     "require": {},
