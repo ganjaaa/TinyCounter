@@ -1,0 +1,27 @@
+{
+    "name": "ganjaaa/TinyCounter",
+    "description": "Just my little Helper Script",
+    "license": "MIT",
+    "keywords": ["ganjaaa", "counter"],
+    "authors": [
+        {
+            "name": "Felix Kurth",
+            "email": "meine@agonie.info"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "4.0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ganjaaa\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ganjaaa/TinyCounter"
+        }
+    ]
+}
