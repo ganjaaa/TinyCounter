@@ -5,6 +5,7 @@ namespace Ganjaaa;
 use \PDO;
 
 class TinyCounter {
+
     // Database File
     static $dbFile = __DIR__ . '/counter.db';
 
@@ -88,4 +89,10 @@ class TinyCounter {
         return new PDO('sqlite:' . static::$dbFile);
     }
 
+}
+
+if (php_sapi_name() == "cli") {
+    if (!is_file(__DIR__ . TinyCounter::$dbFile)) {
+        TinyCounter::_install();
+    }
 }
