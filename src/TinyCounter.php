@@ -16,6 +16,24 @@ class TinyCounter {
      * @return false
      */
     public static function _install() {
+        if (file_exists($dbFile)) {
+            $pdo = static::getHandler();
+            return $pdo->query('CREATE TABLE counter ( `id` VARCHAR(255) NOT NULL,`cnt` INT NULL DEFAULT 0, PRIMARY KEY (`id`));');
+        } else {
+            throw new Exception('counter.db already exists');
+        }
+    }
+
+    /**
+     * Reinstall Database
+     * 
+     * @return PDOStatment
+     * @return false
+     */
+    public static function _reinstall() {
+        if (file_exists($dbFile)) {
+            unlink($dbFile);
+        }
         $pdo = static::getHandler();
         return $pdo->query('CREATE TABLE counter ( `id` VARCHAR(255) NOT NULL,`cnt` INT NULL DEFAULT 0, PRIMARY KEY (`id`));');
     }
