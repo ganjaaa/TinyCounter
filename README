@@ -1,17 +1,5 @@
 # TinyCounter
 
-## ToDo
-* writing autoinstall via composer
-
-
-## Create Database
-
-In Commandline :
-
-```
-    php vendor/ganjaaa/TinyCounter/src/TinyCounter.php
-```
-
 ## Install via Composer
 
 ```
